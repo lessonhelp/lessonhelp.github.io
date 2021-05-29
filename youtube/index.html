@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/normalize.css">
+</head>
+<body>
+    <header class="header">
+        <button class="menu-button">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+        </button>
+        <img src="./img\logo.svg" alt="" class="logo">
+        <div class="input-group">
+            <input type="search" name="search" class="input-search" placeholder="Search">
+            <button type="submit" class="button-search">
+                <svg class="icon icon-search" width="19" height="19">
+                    <use xlink:href="img\icon.svg#search"></use>
+                  </svg>
+            </button>
+        </div>
+        <div class="icons">
+            <a href="" class="icons-link">
+                <svg class="icon icon-video" width="27" height="20">
+                    <use xlink:href="img\icon.svg#video"></use>
+                  </svg>
+            </a>
+            <a href="" class="icons-link">
+                <svg class="icon icon-app" width="21" height="21">
+                    <use xlink:href="img\icon.svg#app"></use>
+                  </svg>
+            </a>
+            <a href="" class="icons-link">
+                <svg class="icon icon-notif" width="22" height="26">
+                    <use xlink:href="img\icon.svg#notif"></use>
+                  </svg>
+            </a>
+        </div>
+        <a href="#" class="user">
+            <img src="./img/avatar.jpg" alt="" class="user-avatar">
+        </a>
+        <!-- /.user -->
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <svg class="icon icon-home" width="20" height="19">
+                                <use xlink:href="img\icon.svg#home"></use>
+                            </svg>
+                            <span class="nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <svg class="icon icon-trend" width="20" height="19">
+                                <use xlink:href="img\icon.svg#trend"></use>
+                            </svg>
+                            <span class="nav-text">Trending</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <svg class="icon icon-subs" width="20" height="19">
+                                <use xlink:href="img\icon.svg#subs"></use>
+                            </svg>
+                            <span class="nav-text">Subscription</span>
+                         </a>
+                    </li>
+                </ul>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <svg class="icon icon-library" width="20" height="19">
+                                <use xlink:href="img\icon.svg#library"></use>
+                            </svg>
+                            <span class="nav-text">Library</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <svg class="icon icon-history" width="20" height="19">
+                                <use xlink:href="img\icon.svg#history"></use>
+                            </svg>
+                            <span class="nav-text">History</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <svg class="icon icon-watclater" width="20" height="19">
+                                <use xlink:href="img\icon.svg#watclater"></use>
+                            </svg>
+                            <span class="nav-text">Watch later</span>
+                         </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <svg class="icon icon-favourite" width="20" height="19">
+                                <use xlink:href="img\icon.svg#favourite"></use>
+                            </svg>
+                            <span class="nav-text">Favourite</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <svg class="icon icon-liked" width="20" height="19">
+                                <use xlink:href="img\icon.svg#liked"></use>
+                            </svg>
+                            <span class="nav-text">Liked video</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <svg class="icon icon-music" width="20" height="19">
+                                <use xlink:href="img\icon.svg#music"></use>
+                            </svg>
+                            <span class="nav-text">Music</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <svg class="icon icon-games" width="20" height="19">
+                                <use xlink:href="img\icon.svg#games"></use>
+                            </svg>
+                            <span class="nav-text">Games</span>
+                         </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <svg class="icon icon-more" width="20" height="19">
+                                <use xlink:href="img\icon.svg#more"></use>
+                            </svg>
+                            <span class="nav-text">Show more</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+                <h2 class="nav-title">Subscriptions</h2>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="./img/Gussie.png" alt="" class="nav-image">
+                            <span class="nav-text">Gussie Singleton</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="./img/Nora.png" alt="" class="nav-image">
+                            <span class="nav-text">Nora Francis</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="./img/Belle.png" alt="" class="nav-image">
+                            <span class="nav-text">Belle Briggs</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="./img/Eunice.png" alt="" class="nav-image">
+                            <span class="nav-text">Eunice Cortez</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="./img/Emma.png" alt="" class="nav-image">
+                            <span class="nav-text">Emma Hanson</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="./img/Leah.png" alt="" class="nav-image">
+                            <span class="nav-text">Leah Berry</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <svg class="icon icon-setting" width="20" height="19">
+                                <use xlink:href="./img\icon.svg#setting"></use>
+                            </svg>
+                            <span class="nav-text">Setting</span>
+                        </a>
+                    </li>
+                </ul>
+        </aside>
+        <main class="content">
+            <div class="channel">
+                <a href="" class="channel-title">
+                    <img src="./img/Emma.png" alt="" class="channel-avatar">
+                    <span class="channel-text">Dollie Blair</span>
+                </a>
+
+                <div class="slider-buttons">
+                    <div class="channel-button channel-button-prev">
+                        <svg class="icon icon-left" width="28" height="28">
+                            <use xlink:href="./img\icon.svg#left"></use>
+                        </svg>
+                    </div>
+                    <div class="channel-button channel-button-next">
+                        <svg class="icon icon-right" width="28" height="28">
+                            <use xlink:href="./img\icon.svg#right"></use>
+                        </svg>
+                    </div>
+                 </div>
+
+                <!-- Slider main container -->
+                <div class="swiper-container swiper1 channel-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                                <img src="./img/slide1.png" alt="" class="thumbnail">
+                                <span class="video-duration">4:15</span>
+                            </div>
+                            <!-- /.video-thumb -->
+                            <h3 class="video-title">A Brief History Of Creation</h3>
+                            <div class="video-info">
+                                <span class="video-counter">
+                                    <span class="video-views">80k views</span>
+                                    <span class="video-date">3 days ago</span>
+                                </span>
+                                <span class="video-channel">Dollie Blair</span>
+                            </div>
+                            <!-- /.video-info -->
+                        </div>
+                        <!--  /.video-card-->
+                    </div>
+                    <!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                                <img src="./img/slide 2.png" alt="" class="thumbnail">
+                                <span class="video-duration">4:15</span>
+                            </div>
+                            <!-- /.video-thumb -->
+                            <h3 class="video-title">Selecting The Right Hoteln</h3>
+                            <div class="video-info">
+                                <span class="video-counter">
+                                    <span class="video-views">123k views</span>
+                                    <span class="video-date">1 months ago</span>
+                                </span>
+                                <span class="video-channel">Dollie Blair</span>
+                            </div>
+                            <!-- /.video-info -->
+                        </div>
+                        <!--  /.video-card-->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                                <img src="./img/slide3.png" alt="" class="thumbnail">
+                                <span class="video-duration">4:15</span>
+                            </div>
+                            <!-- /.video-thumb -->
+                            <h3 class="video-title">Asteroids</h3>
+                            <div class="video-info">
+                                <span class="video-counter">
+                                    <span class="video-views">843k views</span>
+                                    <span class="video-date">12 days ago</span>
+                                </span>
+                                <span class="video-channel">Dollie Blair</span>
+                            </div>
+                            <!-- /.video-info -->
+                        </div>
+                        <!--  /.video-card-->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                                <img src="./img/slide4.png" alt="" class="thumbnail">
+                                <span class="video-duration">4:15</span>
+                            </div>
+                            <!-- /.video-thumb -->
+                            <h3 class="video-title">Telescopes 101</h3>
+                            <div class="video-info">
+                                <span class="video-counter">
+                                    <span class="video-views">11k views</span>
+                                    <span class="video-date">6 months ago</span>
+                                </span>
+                                <span class="video-channel">Dollie Blair</span>
+                            </div>
+                            <!-- /.video-info -->
+                        </div>
+                        <!--  /.video-card-->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                                <img src="./img/slide5.png" alt="" class="thumbnail">
+                                <span class="video-duration">4:15</span>
+                            </div>
+                            <!-- /.video-thumb -->
+                            <h3 class="video-title">Medical Care Is Just</h3>
+                            <div class="video-info">
+                                <span class="video-counter">
+                                    <span class="video-views">18k views</span>
+                                    <span class="video-date">2 days ago</span>
+                                </span>
+                                <span class="video-channel">Dollie Blair</span>
+                            </div>
+                            <!-- /.video-info -->
+                        </div>
+                        <!--  /.video-card-->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                                <img src="./img/slide6.png" alt="" class="thumbnail">
+                                <span class="video-duration">4:15</span>
+                            </div>
+                            <!-- /.video-thumb -->
+                            <h3 class="video-title">Moon Gazing</h3>
+                            <div class="video-info">
+                                <span class="video-counter">
+                                    <span class="video-views">67k views</span>
+                                    <span class="video-date">4 months ago</span>
+                                </span>
+                                <span class="video-channel">Dollie Blair</span>
+                            </div>
+                            <!-- /.video-info -->
+                        </div>
+                        <!--  /.video-card-->
+                    </div>
+                    </div>
+
+                </div>
+                <!-- swiper-container  -->
+            </div>
+            <!-- /.channel -->
+            <div class="channel">
+                <a href="" class="channel-title">
+                    <img src="./img/Belle.png" alt="" class="channel-avatar">
+                    <span class="channel-text">Belle Blair</span>
+                </a>
+
+                <div class="slider-buttons">
+                    <div class="channel-button channel-button-prev-2">
+                        <svg class="icon icon-left" width="28" height="28">
+                            <use xlink:href="./img\icon.svg#left"></use>
+                        </svg>
+                    </div>
+                    <div class="channel-button channel-button-next-2">
+                        <svg class="icon icon-right" width="28" height="28">
+                            <use xlink:href="./img\icon.svg#right"></use>
+                        </svg>
+                    </div>
+                 </div>
+
+                <!-- Slider main container -->
+                <div class="swiper-container swiper2 channel-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                                <img src="./img/slide1.png" alt="" class="thumbnail">
+                                <span class="video-duration">4:15</span>
+                            </div>
+                            <!-- /.video-thumb -->
+                            <h3 class="video-title">A Brief History Of Creation</h3>
+                            <div class="video-info">
+                                <span class="video-counter">
+                                    <span class="video-views">80k views</span>
+                                    <span class="video-date">3 days ago</span>
+                                </span>
+                                <span class="video-channel">Dollie Blair</span>
+                            </div>
+                            <!-- /.video-info -->
+                        </div>
+                        <!--  /.video-card-->
+                    </div>
+                    <!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                                <img src="./img/slide 2.png" alt="" class="thumbnail">
+                                <span class="video-duration">4:15</span>
+                            </div>
+                            <!-- /.video-thumb -->
+                            <h3 class="video-title">Selecting The Right Hoteln</h3>
+                            <div class="video-info">
+                                <span class="video-counter">
+                                    <span class="video-views">123k views</span>
+                                    <span class="video-date">1 months ago</span>
+                                </span>
+                                <span class="video-channel">Dollie Blair</span>
+                            </div>
+                            <!-- /.video-info -->
+                        </div>
+                        <!--  /.video-card-->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                                <img src="./img/slide3.png" alt="" class="thumbnail">
+                                <span class="video-duration">4:15</span>
+                            </div>
+                            <!-- /.video-thumb -->
+                            <h3 class="video-title">Asteroids</h3>
+                            <div class="video-info">
+                                <span class="video-counter">
+                                    <span class="video-views">843k views</span>
+                                    <span class="video-date">12 days ago</span>
+                                </span>
+                                <span class="video-channel">Dollie Blair</span>
+                            </div>
+                            <!-- /.video-info -->
+                        </div>
+                        <!--  /.video-card-->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                                <img src="./img/slide4.png" alt="" class="thumbnail">
+                                <span class="video-duration">4:15</span>
+                            </div>
+                            <!-- /.video-thumb -->
+                            <h3 class="video-title">Telescopes 101</h3>
+                            <div class="video-info">
+                                <span class="video-counter">
+                                    <span class="video-views">11k views</span>
+                                    <span class="video-date">6 months ago</span>
+                                </span>
+                                <span class="video-channel">Dollie Blair</span>
+                            </div>
+                            <!-- /.video-info -->
+                        </div>
+                        <!--  /.video-card-->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                                <img src="./img/slide5.png" alt="" class="thumbnail">
+                                <span class="video-duration">4:15</span>
+                            </div>
+                            <!-- /.video-thumb -->
+                            <h3 class="video-title">Medical Care Is Just</h3>
+                            <div class="video-info">
+                                <span class="video-counter">
+                                    <span class="video-views">18k views</span>
+                                    <span class="video-date">2 days ago</span>
+                                </span>
+                                <span class="video-channel">Dollie Blair</span>
+                            </div>
+                            <!-- /.video-info -->
+                        </div>
+                        <!--  /.video-card-->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                                <img src="./img/slide6.png" alt="" class="thumbnail">
+                                <span class="video-duration">4:15</span>
+                            </div>
+                            <!-- /.video-thumb -->
+                            <h3 class="video-title">Moon Gazing</h3>
+                            <div class="video-info">
+                                <span class="video-counter">
+                                    <span class="video-views">67k views</span>
+                                    <span class="video-date">4 months ago</span>
+                                </span>
+                                <span class="video-channel">Dollie Blair</span>
+                            </div>
+                            <!-- /.video-info -->
+                        </div>
+                        <!--  /.video-card-->
+                    </div>
+                    </div>
+
+                </div>
+                <!-- swiper-container  -->
+            </div>
+            <!-- /.channel -->
+            <div class="channel">
+                <a href="" class="channel-title">
+                    <img src="./img/Nora.png" alt="" class="channel-avatar">
+                    <span class="channel-text">Nora Blair</span>
+                </a>
+
+                <div class="slider-buttons">
+                    <div class="channel-button channel-button-prev-3">
+                        <svg class="icon icon-left" width="28" height="28">
+                            <use xlink:href="img\icon.svg#left"></use>
+                        </svg>
+                    </div>
+                    <div class="channel-button channel-button-next-3">
+                        <svg class="icon icon-right" width="28" height="28">
+                            <use xlink:href="img\icon.svg#right"></use>
+                        </svg>
+                    </div>
+                 </div>
+
+                <!-- Slider main container -->
+                <div class="swiper-container swiper3 channel-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                                <img src="./img/slide1.png" alt="" class="thumbnail">
+                                <span class="video-duration">4:15</span>
+                            </div>
+                            <!-- /.video-thumb -->
+                            <h3 class="video-title">A Brief History Of Creation</h3>
+                            <div class="video-info">
+                                <span class="video-counter">
+                                    <span class="video-views">80k views</span>
+                                    <span class="video-date">3 days ago</span>
+                                </span>
+                                <span class="video-channel">Dollie Blair</span>
+                            </div>
+                            <!-- /.video-info -->
+                        </div>
+                        <!--  /.video-card-->
+                    </div>
+                    <!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                                <img src="./img/slide 2.png" alt="" class="thumbnail">
+                                <span class="video-duration">4:15</span>
+                            </div>
+                            <!-- /.video-thumb -->
+                            <h3 class="video-title">Selecting The Right Hoteln</h3>
+                            <div class="video-info">
+                                <span class="video-counter">
+                                    <span class="video-views">123k views</span>
+                                    <span class="video-date">1 months ago</span>
+                                </span>
+                                <span class="video-channel">Dollie Blair</span>
+                            </div>
+                            <!-- /.video-info -->
+                        </div>
+                        <!--  /.video-card-->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                                <img src="./img/slide3.png" alt="" class="thumbnail">
+                                <span class="video-duration">4:15</span>
+                            </div>
+                            <!-- /.video-thumb -->
+                            <h3 class="video-title">Asteroids</h3>
+                            <div class="video-info">
+                                <span class="video-counter">
+                                    <span class="video-views">843k views</span>
+                                    <span class="video-date">12 days ago</span>
+                                </span>
+                                <span class="video-channel">Dollie Blair</span>
+                            </div>
+                            <!-- /.video-info -->
+                        </div>
+                        <!--  /.video-card-->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                                <img src="./img/slide4.png" alt="" class="thumbnail">
+                                <span class="video-duration">4:15</span>
+                            </div>
+                            <!-- /.video-thumb -->
+                            <h3 class="video-title">Telescopes 101</h3>
+                            <div class="video-info">
+                                <span class="video-counter">
+                                    <span class="video-views">11k views</span>
+                                    <span class="video-date">6 months ago</span>
+                                </span>
+                                <span class="video-channel">Dollie Blair</span>
+                            </div>
+                            <!-- /.video-info -->
+                        </div>
+                        <!--  /.video-card-->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                                <img src="./img/slide5.png" alt="" class="thumbnail">
+                                <span class="video-duration">4:15</span>
+                            </div>
+                            <!-- /.video-thumb -->
+                            <h3 class="video-title">Medical Care Is Just</h3>
+                            <div class="video-info">
+                                <span class="video-counter">
+                                    <span class="video-views">18k views</span>
+                                    <span class="video-date">2 days ago</span>
+                                </span>
+                                <span class="video-channel">Dollie Blair</span>
+                            </div>
+                            <!-- /.video-info -->
+                        </div>
+                        <!--  /.video-card-->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <div class="video-thumb">
+                                <img src="./img/slide6.png" alt="" class="thumbnail">
+                                <span class="video-duration">4:15</span>
+                            </div>
+                            <!-- /.video-thumb -->
+                            <h3 class="video-title">Moon Gazing</h3>
+                            <div class="video-info">
+                                <span class="video-counter">
+                                    <span class="video-views">67k views</span>
+                                    <span class="video-date">4 months ago</span>
+                                </span>
+                                <span class="video-channel">Dollie Blair</span>
+                            </div>
+                            <!-- /.video-info -->
+                        </div>
+                        <!--  /.video-card-->
+                    </div>
+                    </div>
+
+                </div>
+                <!-- swiper-container  -->
+            </div>
+            <!-- /.channel -->
+        </main>
+    </div>
+    <!-- /.container -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
